@@ -1,6 +1,6 @@
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
 import { NgImageSliderModule, NgImageSliderComponent } from 'ng-image-slider';
-import { HeroService } from "./hero.service";
+import { ImageService } from "./image.service";
 
 @Component({
     selector: 'app-root',
@@ -25,7 +25,7 @@ export class AppComponent {
     imageObject;
     slideOrderType:string = 'DESC';
 
-    constructor(private heroService: HeroService) {
+    constructor(private imageService: ImageService) {
         this.setImageObject();
     }
 
@@ -38,12 +38,7 @@ export class AppComponent {
     }
 
     setImageObject() {
-        // this.heroService.getImages().subscribe((data: any) => {
-        // setTimeout(() => {
-        //     this.imageObject = data;
-        // }, 3000);
-        // });
-        this.imageObject = this.heroService.getImagesWithOrder();
+        this.imageObject = this.imageService.getImagesWithOrder();
     }
 
     imageOnClick(index) {

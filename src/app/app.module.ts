@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { NgImageSliderModule } from 'ng-image-slider';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from "@angular/common/http";
-import { HeroService } from "./hero.service";
+import { ImageService } from "./image.service";
 
 @NgModule({
     declarations: [
@@ -16,7 +16,7 @@ import { HeroService } from "./hero.service";
         HttpClientModule,
         NgImageSliderModule
     ],
-    providers: [HeroService],
+    providers: [ImageService],
     bootstrap: [AppComponent]
 })
 export class AppModule { }
