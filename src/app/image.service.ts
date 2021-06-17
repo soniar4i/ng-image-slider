@@ -6,7 +6,7 @@ const httpOptions = {
 };
 
 @Injectable()
-export class HeroService {
+export class ImageService {
   constructor(private http: HttpClient) {}
   
 data:any= 
