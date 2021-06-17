@@ -1,5 +1,7 @@
 # Angular Image Slider with Lightbox
 
+### Fork from https://sanjayv.github.io/ng-image-slider/ to update to angular 12
+
 An Angular responsive image slider with lightbox popup.
 Also support youtube and mp4 video urls.
 
